@@ -1,3 +1,2 @@
-# Nav-AI2
+# Nav-AI
 
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/Thafoxes/Nav-AI2)
