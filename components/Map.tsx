@@ -9,15 +9,19 @@ interface MapProps {
   zoom: number;
 }
 
-// Declare these outside the component to avoid re-declarations
+// Only declare types for native platforms
 let MapView: any;
 let Marker: any;
 
-// Only import native map components if we're on a native platform
-if (Platform.OS === 'ios' || Platform.OS === 'android') {
-  const NativeMaps = require('react-native-maps');
-  MapView = NativeMaps.default;
-  Marker = NativeMaps.Marker;
+// Only attempt to import native components if we're on a native platform
+if (Platform.OS !== 'web') {
+  try {
+    const NativeMaps = require('react-native-maps');
+    MapView = NativeMaps.default;
+    Marker = NativeMaps.Marker;
+  } catch (e) {
+    console.warn('Failed to load react-native-maps:', e);
+  }
 }
 
 function MapComponent({ center, zoom }: MapProps) {
@@ -126,7 +130,7 @@ function MapComponent({ center, zoom }: MapProps) {
   }
 
   // For native platforms, use the previously imported MapView
-  if (Platform.OS === 'ios' || Platform.OS === 'android') {
+  if (Platform.OS !== 'web' && MapView) {
     return (
       <View style={styles.container}>
         <MapView
@@ -189,18 +193,20 @@ function MapComponent({ center, zoom }: MapProps) {
               stylers: [{ color: '#a6cbe3' }],
             },
           ]}>
-          <Marker
-            coordinate={{
-              latitude: center.lat,
-              longitude: center.lng,
-            }}
-          />
+          {Marker && (
+            <Marker
+              coordinate={{
+                latitude: center.lat,
+                longitude: center.lng,
+              }}
+            />
+          )}
         </MapView>
       </View>
     );
   }
 
-  // Fallback for unsupported platforms
+  // Fallback for unsupported platforms or when MapView fails to load
   return (
     <View style={styles.container}>
       <View style={styles.map} />

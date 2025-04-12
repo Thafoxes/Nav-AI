@@ -1,7 +1,7 @@
 {
   "name": "bolt-expo-starter",
   "main": "expo-router/entry",
-  "version": "1.0.0",
+  "version": "2.1.0",
   "private": true,
   "scripts": {
     "dev": "EXPO_NO_TELEMETRY=1 expo start",
@@ -9,15 +9,18 @@
     "lint": "expo lint"
   },
   "dependencies": {
+    "@babel/runtime": "^7.24.0",
     "@expo-google-fonts/inter": "^0.2.3",
     "@expo/vector-icons": "^14.0.2",
     "@lucide/lab": "^0.1.2",
     "@react-navigation/bottom-tabs": "^7.2.0",
     "@react-navigation/native": "^7.0.14",
     "expo": "52.0.33",
+    "expo-av": "^13.10.5",
     "expo-blur": "^14.0.3",
     "expo-camera": "^16.0.18",
     "expo-constants": "^17.0.5",
+    "expo-file-system": "~16.0.8",
     "expo-font": "^13.0.3",
     "expo-haptics": "^14.0.1",
     "expo-linear-gradient": "^14.0.2",
@@ -41,11 +44,14 @@
     "react-native-svg": "^15.11.1",
     "react-native-url-polyfill": "^2.0.0",
     "react-native-web": "^0.19.13",
-    "react-native-webview": "13.12.5"
+    "react-native-webview": "13.12.5",
+    "react-speech-recognition": "^3.10.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
+    "@babel/plugin-transform-runtime": "^7.24.0",
     "@types/react": "~18.3.12",
+    "@types/react-speech-recognition": "^3.9.5",
     "typescript": "^5.3.3"
   }
 }

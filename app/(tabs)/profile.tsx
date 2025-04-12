@@ -1,9 +1,11 @@
 import { View, Text, StyleSheet, Image, TouchableOpacity, useColorScheme } from 'react-native';
 import { Settings, Bell, Shield } from 'lucide-react-native';
+import { useRouter } from 'expo-router';
 
 export default function ProfileScreen() {
   const colorScheme = useColorScheme();
   const isDark = colorScheme === 'dark';
+  const router = useRouter();
 
   return (
     <View style={[styles.container, isDark && styles.darkContainer]}>
@@ -39,15 +41,16 @@ export default function ProfileScreen() {
         </View>
       </View>
 
-      <View style={styles.menuContainer}>
-        <TouchableOpacity
-          style={[styles.menuItem, isDark && styles.darkMenuItem]}>
-          <Settings size={24} color={isDark ? '#ffffff' : '#000000'} />
-          <Text style={[styles.menuText, isDark && styles.darkText]}>
-            Settings
-          </Text>
-        </TouchableOpacity>
+      <TouchableOpacity
+        style={[styles.settingsButton, isDark && styles.darkSettingsButton]}
+        onPress={() => router.push('/settings')}>
+        <Settings size={32} color={isDark ? '#ffffff' : '#000000'} />
+        <Text style={[styles.settingsButtonText, isDark && styles.darkText]}>
+          Settings
+        </Text>
+      </TouchableOpacity>
 
+      <View style={styles.menuContainer}>
         <TouchableOpacity
           style={[styles.menuItem, isDark && styles.darkMenuItem]}>
           <Bell size={24} color={isDark ? '#ffffff' : '#000000'} />
@@ -127,6 +130,25 @@ const styles = StyleSheet.create({
   statDivider: {
     width: 1,
     backgroundColor: '#e0e0e0',
+  },
+  settingsButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#f8f8f8',
+    marginHorizontal: 20,
+    marginBottom: 20,
+    padding: 20,
+    borderRadius: 12,
+    gap: 12,
+  },
+  darkSettingsButton: {
+    backgroundColor: '#333333',
+  },
+  settingsButtonText: {
+    fontSize: 20,
+    fontWeight: '600',
+    color: '#000000',
   },
   menuContainer: {
     padding: 20,
