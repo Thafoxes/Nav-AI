@@ -13,7 +13,7 @@ This project is made for UMHackathon 2025
 
 ## NLP prototype demonstration github repository
 [Nav AI NLP prototype design](https://github.com/Thafoxes/NAV-AI-NLP-Prototype-design)
-
+[DeepFilterNet2](https://huggingface.co/spaces/hshr/DeepFilterNet2)
 
 # About this project
 
