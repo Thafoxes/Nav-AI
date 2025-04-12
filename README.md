@@ -19,6 +19,7 @@ This project is made for UMHackathon 2025
 
 ### Technology used
 - Deepfilternet [DeepFilterNet2](https://huggingface.co/spaces/hshr/DeepFilterNet2)
+- VOSK
 - LLaMa 3.2
 - Bolt new for prototyping
 - React native
