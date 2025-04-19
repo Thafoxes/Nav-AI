@@ -7,7 +7,7 @@ To address the limitations of AI assistant through text-based interfaces, which 
 
 This project is made for UMHackathon 2025
 
-# PRELIMINARY ROUND:
+## PRELIMINARY ROUND:
 
 ## Presentation link
 [Canva Link](https://www.canva.com/design/DAGkSvW6UKw/9rjd987-8_XWgLw3vg56Ww/edit?utm_content=DAGkSvW6UKw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
@@ -16,7 +16,7 @@ This project is made for UMHackathon 2025
 [Nav AI NLP prototype design](https://github.com/Thafoxes/NAV-AI-NLP-Prototype-design)
 [DeepFilterNet2](https://huggingface.co/spaces/hshr/DeepFilterNet2)
 
-# FINAL ROUND:
+## FINAL ROUND:
 
 ## Presentation link
 [Canva Link](https://www.canva.com/design/DAGlDaVVvBE/ir7WLMOQLILlPUpHvZGVmA/edit?utm_content=DAGlDaVVvBE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
