@@ -19,7 +19,8 @@ This project is made for UMHackathon 2025
 ## FINAL ROUND:
 
 ## Presentation link
-[Canva Link](https://www.canva.com/design/DAGlDaVVvBE/ir7WLMOQLILlPUpHvZGVmA/edit?utm_content=DAGlDaVVvBE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+[Canva Link](https://www.canva.com/design/DAGlDaVVvBE/ir7WLMOQLILlPUpHvZGVmA/edit?utm_content=DAGlDaVVvBE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) (PDF Uploaded at above [Final Round Presentation] )
+Documentation Uploaded at above [Documentation Final Round]
 
 # About this project
 
