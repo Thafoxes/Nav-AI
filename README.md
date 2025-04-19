@@ -27,7 +27,7 @@ Documentation uploaded at above [Documentation Final Round.pdf]
 # About This Project
 
 ### Technology Used
-- Deepfilternet [DeepFilterNet2](https://huggingface.co/spaces/hshr/DeepFilterNet2)
+- Deepfilternet 
 - Whisper
 - LLaMa 3.2
 - Bolt.new for prototyping
