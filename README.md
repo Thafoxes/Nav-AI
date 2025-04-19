@@ -1,4 +1,4 @@
-![img](LOGO.png)
+![alt text](LOGO.png)
 # NAV.AI
 
 To address the limitations of AI assistant through text-based interfaces, which can be impractical and unsafe when they are actively driving. 
